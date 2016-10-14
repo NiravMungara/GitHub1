@@ -63,6 +63,15 @@ namespace AWSPublishTest.Controllers
                 : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
                 : "";
 
+            ViewBag.StatusMessage1 =
+               message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
+               : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
+               : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
+               : message == ManageMessageId.Error ? "An error has occurred."
+               : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
+               : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+               : "";
+
             var userId = User.Identity.GetUserId();
             var model = new IndexViewModel
             {
