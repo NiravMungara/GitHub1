@@ -74,7 +74,7 @@ namespace AWSPublishTest.Controllers
 
 
             ViewBag.StatusMessage2 =
-               message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
+               message == ManageMessageId.ChangePasswordSuccess ? "Your password has bee fsjdfk ; l;sdfkf l;fsdkf dkfl; sdk;flkl ;sdkfn changed."
                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
                : message == ManageMessageId.Error ? "An error has occurred."
